@@ -1,0 +1,41 @@
+﻿namespace Project_Practice
+{
+    public class Hero : Character
+    {
+
+        public Weapon EquippedWeapon { get; set; }
+
+        public void Eat()
+        {
+            Stamina = 100;
+        }
+
+        public void Heal()
+        {
+            Health = 100;
+        }
+
+        public void Attack(Character target)
+        {
+            target.Health -= 5;
+        }
+
+        // Epic: Decapitation (critical attack)
+        // As a hero, I want to insta-kill other characters when decapitating them
+        // As a hero, I want to have an X% chance of critical attack every time I attack
+
+        // Epic: Luck
+        // As a hero, when I kill another character, I want them sometimes to drop a weapon or spell so that I can further my collection
+        // As a hero, I want to have a higher chance of getting an item if my luck is higher
+        // As a hero, I want to increase my luck when I level up
+
+        // Epic: Strength
+        // As a hero, I want the damage I do to other players to be my strength
+        // As a hero, I want to increase my strength when I level up
+
+        // Epic: Levelling up:
+        // As a hero, when I kill another character, I want to get some XP
+        // As a hero, when I get enough XP, I want to level up
+
+    }
+}
